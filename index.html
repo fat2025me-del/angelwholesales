@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angel clothings collections - Women's Fashion Store</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+  <div class="logo">ANGELS</div>
+  <nav>
+    <ul id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+  <div class="cart-btn" onclick="toggleCart()">🛒 (<span id="count">20</span>)</div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Luxury Fashion For Women</h1>
+    <p>Clothes • Shoes • Perfumes • Accessories</p>
+    <button onclick="scrollToShop()">Shop Now</button>
+  </div>
+</section>
+
+<div class="filter">
+  <button onclick="filterProducts('all', event)" class="active">All</button>
+  <button onclick="filterProducts('clothes', event)">Clothes</button>
+  <button onclick="filterProducts('shoes', event)">Shoes</button>
+  <button onclick="filterProducts('perfume', event)">Perfumes</button>
+  <button onclick="filterProducts('accessories', event)">Accessories</button>
+</div>
+
+<section class="products" id="shop">
+  <div class="product-grid" id="productGrid"></div>
+</section>
+
+<div class="cart" id="cart">
+  <h3>Your Cart</h3>
+  <div id="cartItems"></div>
+  <h4>Total: $<span id="total">0</span></h4>
+  <button class="checkout" onclick="checkout()">Checkout</button>
+</div>
+
+<footer>
+  © 2026 Angels clothing collections Fashion Store
+</footer>
+<footer>
+Please tap on shop bar to see our products
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
